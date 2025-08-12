@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sneaker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="left">
+            <button id="menu-toggle" class="hamburger">&#9776;</button>
+            <img src="images/logo.svg" alt="Logo" class="logo" />
+            <div class="nav-links">
+                <a href="#">Collections</a>
+                <a href="#">Men</a>
+                <a href="#">Women</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+
+        <div class="right">
+            <img src="/images/icon-cart.svg" id="cart-icon" class="cart-icon" />
+            <img src="/images/image-avatar.png" class="avatar" />
+        </div>
+
+    </div>
+
+    <div class="container">
+        <div class="images">
+            <div class="image-container">
+                <div class="arrow-mobile left">&#10094;</div>
+                <img class="img1" id="main-image" src="images/image-product-1.jpg" />
+                <div class="arrow-mobile right">&#10095;</div>
+            </div>
+
+            <div class="thumbnails">
+                <img src="images/image-product-1-thumbnail.jpg" onclick="changeImage('images/image-product-1.jpg')" />
+                <img src="images/image-product-2-thumbnail.jpg" onclick="changeImage('images/image-product-2.jpg')" />
+                <img src="images/image-product-3-thumbnail.jpg" onclick="changeImage('images/image-product-3.jpg')" />
+                <img src="images/image-product-4-thumbnail.jpg" onclick="changeImage('images/image-product-4.jpg')" />
+            </div>
+        </div>
+        
+        <div class="content">
+            <h6>SNEAKER COMPANY</h6>
+
+            <h1>Fall Limited Edition<br> Sneakers</h1>
+
+            <p> These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer
+                sole, they'll withstand everything the weather can offer.</p>
+
+            <div class="price-row">
+                <p class="price">$125.00</p>
+                <p class="discount">50%</p>
+            </div>
+            <p class="toggle">$250.00</p>
+
+            <div class="purchase-row">
+                <div class="quantity-selector">
+                    <button id="decrease">-</button>
+                    <span id="quantity">0</span>
+                    <button id="increase">+</button>
+                </div>
+                <div class="cart">
+                    <button><img src="images/icon-cart.svg" />Add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="cart-section" class="cart-section hidden">
+        <h3>Cart</h3>
+        <hr>
+        <div id="cart-content">
+            <p>Your cart is empty.</p>
+        </div>
+    </div>
+
+
+    <div id="lightbox" class="lightbox hidden">
+        <span class="close">&times;</span>
+        <div class="lightbox-content">
+            <div class="arrow left">&#10094;</div>
+            <img id="lightbox-img" src="" alt="Product">
+            <div class="arrow right">&#10095;</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
